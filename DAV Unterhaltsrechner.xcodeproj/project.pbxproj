@@ -1,0 +1,563 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXContainerItemProxy section */
+		ADB45D4F2DCA3224007859FD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = ADB45D392DCA3222007859FD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ADB45D402DCA3222007859FD;
+			remoteInfo = "DAV Unterhaltsrechner";
+		};
+		ADB45D592DCA3224007859FD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = ADB45D392DCA3222007859FD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ADB45D402DCA3222007859FD;
+			remoteInfo = "DAV Unterhaltsrechner";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		ADB45D412DCA3222007859FD /* DAV Unterhaltsrechner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "DAV Unterhaltsrechner.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		ADB45D4E2DCA3224007859FD /* DAV UnterhaltsrechnerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "DAV UnterhaltsrechnerTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		ADB45D582DCA3224007859FD /* DAV UnterhaltsrechnerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "DAV UnterhaltsrechnerUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		ADB45D432DCA3222007859FD /* DAV Unterhaltsrechner */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "DAV Unterhaltsrechner";
+			sourceTree = "<group>";
+		};
+		ADB45D512DCA3224007859FD /* DAV UnterhaltsrechnerTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "DAV UnterhaltsrechnerTests";
+			sourceTree = "<group>";
+		};
+		ADB45D5B2DCA3224007859FD /* DAV UnterhaltsrechnerUITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "DAV UnterhaltsrechnerUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		ADB45D3E2DCA3222007859FD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ADB45D4B2DCA3224007859FD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ADB45D552DCA3224007859FD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		ADB45D382DCA3222007859FD = {
+			isa = PBXGroup;
+			children = (
+				ADB45D432DCA3222007859FD /* DAV Unterhaltsrechner */,
+				ADB45D512DCA3224007859FD /* DAV UnterhaltsrechnerTests */,
+				ADB45D5B2DCA3224007859FD /* DAV UnterhaltsrechnerUITests */,
+				ADB45D422DCA3222007859FD /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		ADB45D422DCA3222007859FD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				ADB45D412DCA3222007859FD /* DAV Unterhaltsrechner.app */,
+				ADB45D4E2DCA3224007859FD /* DAV UnterhaltsrechnerTests.xctest */,
+				ADB45D582DCA3224007859FD /* DAV UnterhaltsrechnerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		ADB45D402DCA3222007859FD /* DAV Unterhaltsrechner */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ADB45D622DCA3224007859FD /* Build configuration list for PBXNativeTarget "DAV Unterhaltsrechner" */;
+			buildPhases = (
+				ADB45D3D2DCA3222007859FD /* Sources */,
+				ADB45D3E2DCA3222007859FD /* Frameworks */,
+				ADB45D3F2DCA3222007859FD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				ADB45D432DCA3222007859FD /* DAV Unterhaltsrechner */,
+			);
+			name = "DAV Unterhaltsrechner";
+			packageProductDependencies = (
+			);
+			productName = "DAV Unterhaltsrechner";
+			productReference = ADB45D412DCA3222007859FD /* DAV Unterhaltsrechner.app */;
+			productType = "com.apple.product-type.application";
+		};
+		ADB45D4D2DCA3224007859FD /* DAV UnterhaltsrechnerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ADB45D652DCA3224007859FD /* Build configuration list for PBXNativeTarget "DAV UnterhaltsrechnerTests" */;
+			buildPhases = (
+				ADB45D4A2DCA3224007859FD /* Sources */,
+				ADB45D4B2DCA3224007859FD /* Frameworks */,
+				ADB45D4C2DCA3224007859FD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				ADB45D502DCA3224007859FD /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				ADB45D512DCA3224007859FD /* DAV UnterhaltsrechnerTests */,
+			);
+			name = "DAV UnterhaltsrechnerTests";
+			packageProductDependencies = (
+			);
+			productName = "DAV UnterhaltsrechnerTests";
+			productReference = ADB45D4E2DCA3224007859FD /* DAV UnterhaltsrechnerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		ADB45D572DCA3224007859FD /* DAV UnterhaltsrechnerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ADB45D682DCA3224007859FD /* Build configuration list for PBXNativeTarget "DAV UnterhaltsrechnerUITests" */;
+			buildPhases = (
+				ADB45D542DCA3224007859FD /* Sources */,
+				ADB45D552DCA3224007859FD /* Frameworks */,
+				ADB45D562DCA3224007859FD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				ADB45D5A2DCA3224007859FD /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				ADB45D5B2DCA3224007859FD /* DAV UnterhaltsrechnerUITests */,
+			);
+			name = "DAV UnterhaltsrechnerUITests";
+			packageProductDependencies = (
+			);
+			productName = "DAV UnterhaltsrechnerUITests";
+			productReference = ADB45D582DCA3224007859FD /* DAV UnterhaltsrechnerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		ADB45D392DCA3222007859FD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1630;
+				LastUpgradeCheck = 1630;
+				TargetAttributes = {
+					ADB45D402DCA3222007859FD = {
+						CreatedOnToolsVersion = 16.3;
+					};
+					ADB45D4D2DCA3224007859FD = {
+						CreatedOnToolsVersion = 16.3;
+						TestTargetID = ADB45D402DCA3222007859FD;
+					};
+					ADB45D572DCA3224007859FD = {
+						CreatedOnToolsVersion = 16.3;
+						TestTargetID = ADB45D402DCA3222007859FD;
+					};
+				};
+			};
+			buildConfigurationList = ADB45D3C2DCA3222007859FD /* Build configuration list for PBXProject "DAV Unterhaltsrechner" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = ADB45D382DCA3222007859FD;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = ADB45D422DCA3222007859FD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				ADB45D402DCA3222007859FD /* DAV Unterhaltsrechner */,
+				ADB45D4D2DCA3224007859FD /* DAV UnterhaltsrechnerTests */,
+				ADB45D572DCA3224007859FD /* DAV UnterhaltsrechnerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		ADB45D3F2DCA3222007859FD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ADB45D4C2DCA3224007859FD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ADB45D562DCA3224007859FD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		ADB45D3D2DCA3222007859FD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ADB45D4A2DCA3224007859FD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ADB45D542DCA3224007859FD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		ADB45D502DCA3224007859FD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = ADB45D402DCA3222007859FD /* DAV Unterhaltsrechner */;
+			targetProxy = ADB45D4F2DCA3224007859FD /* PBXContainerItemProxy */;
+		};
+		ADB45D5A2DCA3224007859FD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = ADB45D402DCA3222007859FD /* DAV Unterhaltsrechner */;
+			targetProxy = ADB45D592DCA3224007859FD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		ADB45D602DCA3224007859FD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = H9FDH8DD64;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		ADB45D612DCA3224007859FD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = H9FDH8DD64;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		ADB45D632DCA3224007859FD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = H9FDH8DD64;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "pioneo.DAV-Unterhaltsrechner";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		ADB45D642DCA3224007859FD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = H9FDH8DD64;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "pioneo.DAV-Unterhaltsrechner";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		ADB45D662DCA3224007859FD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = H9FDH8DD64;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "pioneo.DAV-UnterhaltsrechnerTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DAV Unterhaltsrechner.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/DAV Unterhaltsrechner";
+			};
+			name = Debug;
+		};
+		ADB45D672DCA3224007859FD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = H9FDH8DD64;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "pioneo.DAV-UnterhaltsrechnerTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DAV Unterhaltsrechner.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/DAV Unterhaltsrechner";
+			};
+			name = Release;
+		};
+		ADB45D692DCA3224007859FD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = H9FDH8DD64;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "pioneo.DAV-UnterhaltsrechnerUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "DAV Unterhaltsrechner";
+			};
+			name = Debug;
+		};
+		ADB45D6A2DCA3224007859FD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = H9FDH8DD64;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "pioneo.DAV-UnterhaltsrechnerUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "DAV Unterhaltsrechner";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		ADB45D3C2DCA3222007859FD /* Build configuration list for PBXProject "DAV Unterhaltsrechner" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ADB45D602DCA3224007859FD /* Debug */,
+				ADB45D612DCA3224007859FD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ADB45D622DCA3224007859FD /* Build configuration list for PBXNativeTarget "DAV Unterhaltsrechner" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ADB45D632DCA3224007859FD /* Debug */,
+				ADB45D642DCA3224007859FD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ADB45D652DCA3224007859FD /* Build configuration list for PBXNativeTarget "DAV UnterhaltsrechnerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ADB45D662DCA3224007859FD /* Debug */,
+				ADB45D672DCA3224007859FD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ADB45D682DCA3224007859FD /* Build configuration list for PBXNativeTarget "DAV UnterhaltsrechnerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ADB45D692DCA3224007859FD /* Debug */,
+				ADB45D6A2DCA3224007859FD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = ADB45D392DCA3222007859FD /* Project object */;
+}
