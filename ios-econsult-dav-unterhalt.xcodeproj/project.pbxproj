@@ -29,20 +29,72 @@
 		ADB45D582DCA3224007859FD /* DAV UnterhaltsrechnerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "DAV UnterhaltsrechnerUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		ADB45D8C2DCA3ECD007859FD /* Exceptions for "Project" folder in "DAV UnterhaltsrechnerTests" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				"Targets/Features/DAV UnterhaltsrechnerTests/DAV_UnterhaltsrechnerTests.swift",
+			);
+			target = ADB45D4D2DCA3224007859FD /* DAV UnterhaltsrechnerTests */;
+		};
+		ADB45D8D2DCA3ECD007859FD /* Exceptions for "Project" folder in "DAV UnterhaltsrechnerUITests" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Targets/Assets/Resources/Assets.xcassets,
+				"Targets/Features/DAV Unterhaltsrechner/BerechnungButton.swift",
+				"Targets/Features/DAV Unterhaltsrechner/CalculatorPage.swift",
+				"Targets/Features/DAV Unterhaltsrechner/ContactPage.swift",
+				"Targets/Features/DAV Unterhaltsrechner/DAV_UnterhaltsrechnerApp.swift",
+				"Targets/Features/DAV Unterhaltsrechner/DavPage.swift",
+				"Targets/Features/DAV Unterhaltsrechner/DuesseldorferPage.swift",
+				"Targets/Features/DAV Unterhaltsrechner/FooterView.swift",
+				"Targets/Features/DAV Unterhaltsrechner/HeaderView.swift",
+				"Targets/Features/DAV Unterhaltsrechner/ImpressumPage.swift",
+				"Targets/Features/DAV Unterhaltsrechner/InfoPage.swift",
+				"Targets/Features/DAV Unterhaltsrechner/PrivacyPage.swift",
+				"Targets/Features/DAV Unterhaltsrechner/RechnerPage.swift",
+				"Targets/Features/DAV Unterhaltsrechner/SettingsPage.swift",
+				"Targets/Features/DAV Unterhaltsrechner/SidebarMenu.swift",
+				"Targets/Features/DAV Unterhaltsrechner/UnterhaltsForm.swift",
+				"Targets/Features/DAV UnterhaltsrechnerTests/DAV_UnterhaltsrechnerTests.swift",
+				Targets/Features/RootFeature/Sources/ContentView.swift,
+			);
+			target = ADB45D572DCA3224007859FD /* DAV UnterhaltsrechnerUITests */;
+		};
+		ADB45DA52DCA3ED2007859FD /* Exceptions for "Project" folder in "DAV Unterhaltsrechner" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Targets/Assets/Resources/Assets.xcassets,
+				"Targets/Features/DAV Unterhaltsrechner/BerechnungButton.swift",
+				"Targets/Features/DAV Unterhaltsrechner/CalculatorPage.swift",
+				"Targets/Features/DAV Unterhaltsrechner/ContactPage.swift",
+				"Targets/Features/DAV Unterhaltsrechner/DAV_UnterhaltsrechnerApp.swift",
+				"Targets/Features/DAV Unterhaltsrechner/DavPage.swift",
+				"Targets/Features/DAV Unterhaltsrechner/DuesseldorferPage.swift",
+				"Targets/Features/DAV Unterhaltsrechner/FooterView.swift",
+				"Targets/Features/DAV Unterhaltsrechner/HeaderView.swift",
+				"Targets/Features/DAV Unterhaltsrechner/ImpressumPage.swift",
+				"Targets/Features/DAV Unterhaltsrechner/InfoPage.swift",
+				"Targets/Features/DAV Unterhaltsrechner/PrivacyPage.swift",
+				"Targets/Features/DAV Unterhaltsrechner/RechnerPage.swift",
+				"Targets/Features/DAV Unterhaltsrechner/SettingsPage.swift",
+				"Targets/Features/DAV Unterhaltsrechner/SidebarMenu.swift",
+				"Targets/Features/DAV Unterhaltsrechner/UnterhaltsForm.swift",
+				Targets/Features/RootFeature/Sources/ContentView.swift,
+			);
+			target = ADB45D402DCA3222007859FD /* DAV Unterhaltsrechner */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		ADB45D432DCA3222007859FD /* DAV Unterhaltsrechner */ = {
+		ADB45D882DCA3EBE007859FD /* Project */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			path = "DAV Unterhaltsrechner";
-			sourceTree = "<group>";
-		};
-		ADB45D512DCA3224007859FD /* DAV UnterhaltsrechnerTests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = "DAV UnterhaltsrechnerTests";
-			sourceTree = "<group>";
-		};
-		ADB45D5B2DCA3224007859FD /* DAV UnterhaltsrechnerUITests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = "DAV UnterhaltsrechnerUITests";
+			exceptions = (
+				ADB45DA52DCA3ED2007859FD /* Exceptions for "Project" folder in "DAV Unterhaltsrechner" target */,
+				ADB45D8C2DCA3ECD007859FD /* Exceptions for "Project" folder in "DAV UnterhaltsrechnerTests" target */,
+				ADB45D8D2DCA3ECD007859FD /* Exceptions for "Project" folder in "DAV UnterhaltsrechnerUITests" target */,
+			);
+			path = Project;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -75,10 +127,8 @@
 		ADB45D382DCA3222007859FD = {
 			isa = PBXGroup;
 			children = (
-				ADB45D432DCA3222007859FD /* DAV Unterhaltsrechner */,
-				ADB45D512DCA3224007859FD /* DAV UnterhaltsrechnerTests */,
-				ADB45D5B2DCA3224007859FD /* DAV UnterhaltsrechnerUITests */,
 				ADB45D422DCA3222007859FD /* Products */,
+				ADB45D882DCA3EBE007859FD /* Project */,
 			);
 			sourceTree = "<group>";
 		};
@@ -107,9 +157,6 @@
 			);
 			dependencies = (
 			);
-			fileSystemSynchronizedGroups = (
-				ADB45D432DCA3222007859FD /* DAV Unterhaltsrechner */,
-			);
 			name = "DAV Unterhaltsrechner";
 			packageProductDependencies = (
 			);
@@ -129,9 +176,6 @@
 			);
 			dependencies = (
 				ADB45D502DCA3224007859FD /* PBXTargetDependency */,
-			);
-			fileSystemSynchronizedGroups = (
-				ADB45D512DCA3224007859FD /* DAV UnterhaltsrechnerTests */,
 			);
 			name = "DAV UnterhaltsrechnerTests";
 			packageProductDependencies = (
@@ -154,7 +198,7 @@
 				ADB45D5A2DCA3224007859FD /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
-				ADB45D5B2DCA3224007859FD /* DAV UnterhaltsrechnerUITests */,
+				ADB45D882DCA3EBE007859FD /* Project */,
 			);
 			name = "DAV UnterhaltsrechnerUITests";
 			packageProductDependencies = (
