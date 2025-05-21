@@ -8,10 +8,9 @@
 import SwiftUI
 
 struct BerechnungButton: View {
+    var action: () -> Void = {}
     var body: some View {
-        Button(action: {
-            // Add functionality later
-        }) {
+        Button(action: action) {
             Text("Berechnung")
                 .foregroundColor(.white)
                 .bold()
