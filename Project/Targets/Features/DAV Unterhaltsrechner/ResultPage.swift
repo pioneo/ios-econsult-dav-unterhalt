@@ -8,12 +8,72 @@
 import SwiftUI
 
 struct ResultPage: View {
-    
-    let kind1: Int
-    let kind2: Int
-    let kind3: Int
-    
-    let einkommen: Int
+    let age1: Int
+    let age2: Int
+    let age3: Int
+    let income: Int
+
+    @State private var unterhaltValues: [[[Double]]] = []
+    @State private var selbstbehalt: Double = 1450
+
+    @State private var kind1: Double = 0
+    @State private var kind2: Double = 0
+    @State private var kind3: Double = 0
+
+    private func getIncomeIndex(_ income: Int) -> Int {
+        switch income {
+        case ...2100: return 0
+        case ...2500: return 1
+        case ...2900: return 2
+        case ...3300: return 3
+        case ...3700: return 4
+        case ...4100: return 5
+        case ...4500: return 6
+        case ...4900: return 7
+        case ...5300: return 8
+        case ...5700: return 9
+        case ...6400: return 10
+        case ...7200: return 11
+        case ...8200: return 12
+        case ...9700: return 13
+        default: return 14
+        }
+    }
+
+    private func getAgeIndex(_ age: Int) -> Int {
+        switch age {
+        case 0...5: return 0
+        case 6...11: return 1
+        default: return 2
+        }
+    }
+
+    private func calculateUnterhalt(age: Int, isThirdChild: Bool) -> Double {
+        guard age > 0, !unterhaltValues.isEmpty else { return 0 }
+        let incomeIndex = getIncomeIndex(income)
+        let ageIndex = getAgeIndex(age)
+        let childIndex = isThirdChild ? 1 : 0
+        return unterhaltValues[childIndex][incomeIndex][ageIndex]
+    }
+
+    private func loadJson() {
+        if let url = Bundle.main.url(forResource: "unterhalt_values", withExtension: "json"),
+           let data = try? Data(contentsOf: url),
+           let json = try? JSONDecoder().decode([[[Double]]].self, from: data) {
+            unterhaltValues = json
+
+            kind1 = calculateUnterhalt(age: age1, isThirdChild: false)
+            kind2 = calculateUnterhalt(age: age2, isThirdChild: false)
+            kind3 = calculateUnterhalt(age: age3, isThirdChild: true)
+        }
+    }
+
+    var totalSupport: Double { kind1 + kind2 + kind3 }
+    var difference: Double { Double(income) - totalSupport }
+    var anspruch: Double {
+        let available = Double(income) - selbstbehalt
+        return difference < selbstbehalt ? max(0, available) : totalSupport
+    }
     
     var body: some View {
         ScrollView {
@@ -99,6 +159,9 @@ struct ResultPage: View {
         
         .navigationTitle("Deutscher Anwaltverein (DAV)")
         .navigationBarTitleDisplayMode(.inline)
+        .onAppear {
+            loadJson()
+        }
         
         FooterView()
     }
