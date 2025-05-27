@@ -7,10 +7,12 @@
 import SwiftUI
 
 struct UnterhaltsForm: View {
-    @State private var kind1: Double = 0
-    @State private var kind2: Double = 0
-    @State private var kind3: Double = 0
-    @State private var einkommen: String = ""
+    @Binding var kind1: Double
+    @Binding var kind2: Double
+    @Binding var kind3: Double
+    @Binding var einkommen: Double
+    @State private var navigateToResult = false
+    
 
     var body: some View {
         VStack(alignment: .leading, spacing: 20) {
@@ -45,7 +47,7 @@ struct UnterhaltsForm: View {
 
             HStack {
                 Text("Monatliches Einkommen:")
-                TextField("0", text: $einkommen)
+                TextField("0", value: $einkommen, formatter: NumberFormatter())
                     .keyboardType(.numberPad)
                     .textFieldStyle(RoundedBorderTextFieldStyle())
                 Text("€")
