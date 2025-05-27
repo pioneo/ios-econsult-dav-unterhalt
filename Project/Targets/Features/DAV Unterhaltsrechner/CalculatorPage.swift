@@ -14,6 +14,7 @@ struct CalculatorPage: View {
     @State private var einkommen: Double = 0
 
     @State private var showResult = false
+    @State private var showAlert = false
     
     var body: some View {
         VStack {
@@ -26,6 +27,10 @@ struct CalculatorPage: View {
             )
             .frame(maxHeight: .infinity)
             BerechnungButton(action: {
+                if einkommen == 0 {
+                    showAlert = true
+                    return
+                }
                 showResult = true
             })
             FooterView()
@@ -34,7 +39,12 @@ struct CalculatorPage: View {
         .frame(alignment: .leading)
         .padding()
         .sheet(isPresented: $showResult) {
-            ResultPage(kind1: Int(kind1), kind2: Int(kind2), kind3: Int(kind3), einkommen: Int(einkommen))
+            ResultPage(age1: Int(kind1), age2: Int(kind2), age3: Int(kind3), income: Int(einkommen))
+        }
+        .alert("Missing Income", isPresented: $showAlert) {
+            Button("OK", role: .cancel) { }
+        } message: {
+            Text("Please input an income larger than 0€ to continue.")
         }
     }
 }
