@@ -147,11 +147,6 @@ struct ResultPage: View {
                 }
                 
                 Divider()
-                    .onAppear {
-                        // Calculation?
-                    }
-                
-                
             }
         }
         .frame(alignment: .leading)
