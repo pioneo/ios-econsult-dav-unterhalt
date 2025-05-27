@@ -49,7 +49,7 @@ struct DuesseldorferPage: View {
                     Text("3. Selbstbehalt").font(.headline)
                 }
                 VStack(alignment: .leading, spacing: 4) {
-                    Text("Der Selbstbehalt ist der Betrag, der dem Unterhaltsschuldner mindestens monatlich verbleiben muss, wenn er Unterhalt zu zahlen hat. Beim Kindesunterhalt sind zwei Selbstbehalte von Bedeutung: Einmal der notwendige Selbstbehalt, der gegenüber minderjährigen unverheirateten und ihnen gleichgestellten volljährigen Kindern (privilegierten Kindern) gilt. Dieser beläuft sich nach den meisten Leitlinien der Oberlandesgerichte beim nicht erwerbstätigen Unterhaltspflichtigen derzeit auf monatlich 1.475,00 € und beim erwerbstätigen Unterhaltspflichtigen auf monatlich 1.600,00 €.")
+                    Text("Der Selbstbehalt ist der Betrag, der dem Unterhaltsschuldner mindestens monatlich verbleiben muss, wenn er Unterhalt zu zahlen hat. Beim Kindesunterhalt sind zwei Selbstbehalte von Bedeutung: Einmal der notwendige Selbstbehalt, der gegenüber minderjährigen unverheirateten und ihnen gleichgestellten volljährigen Kindern (privilegierten Kindern) gilt. Dieser beläuft sich nach den meisten Leitlinien der Oberlandesgerichte beim nicht erwerbstätigen Unterhaltspflichtigen derzeit auf monatlich 1.200,00 € und beim erwerbstätigen Unterhaltspflichtigen auf monatlich 1.450,00 €.")
                 }
 
                 
