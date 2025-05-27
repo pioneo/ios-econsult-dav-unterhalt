@@ -17,9 +17,7 @@ struct ResultPage: View {
     
     var body: some View {
         ScrollView {
-        }
-        .overlay(
-        
+            
             VStack(alignment: .leading, spacing: 8) {
                 
                 HStack {Text("Unterhalt Kind 1")
@@ -89,11 +87,13 @@ struct ResultPage: View {
                 }
                 
                 Divider()
+                    .onAppear {
+                        // Calculation?
+                    }
                 
                 
             }
-        )
-        .edgesIgnoringSafeArea(.all)
+        }
         .frame(alignment: .leading)
         .padding()
         
