@@ -82,16 +82,17 @@ struct ResultPage: View {
                 
                 HStack {Text("Unterhalt Kind 1")
                     Spacer()
-                    Text("\(kind1) €")
+                    Text("\(kind1, specifier: "%.2f") €")
                 }
                 
                 HStack {Text("Unterhalt Kind 2")
                     Spacer()
-                    Text("\(kind2) €")
+                    Text("\(kind2, specifier: "%.2f") €")
                 }
+                
                 HStack {Text("Unterhalt Kind 3")
                     Spacer()
-                    Text("\(kind3) €")
+                    Text("\(kind3, specifier: "%.2f") €")
                 }
                 
                 Divider()
@@ -100,9 +101,10 @@ struct ResultPage: View {
                     Text("Summe")
                         .fontWeight(.bold)
                     Spacer()
-                    Text("427.00 €")
+                    Text("\(totalSupport, specifier: "%.2f") €")
                         .fontWeight(.bold)
                 }
+                
                 HStack {
                     VStack(alignment: .leading) {
                         Text("Differenz")
@@ -112,7 +114,7 @@ struct ResultPage: View {
                             .foregroundColor(.gray)
                     }
                     Spacer()
-                    Text("2379.00 €")
+                    Text("\(difference, specifier: "%.2f") €")
                         .fontWeight(.bold)
                 }
                 
@@ -123,7 +125,7 @@ struct ResultPage: View {
                         Text("Selbstbehalt")
                             .font(.headline)
                         Spacer()
-                        Text("1450.00 €")
+                        Text("\(selbstbehalt, specifier: "%.2f") €")
                             .font(.title3)
                             .fontWeight(.bold)
                     }
@@ -141,7 +143,7 @@ struct ResultPage: View {
                     Text("Anspruch")
                         .font(.headline)
                     Spacer()
-                    Text("427.00 €")
+                    Text("\(anspruch, specifier: "%.2f") €")
                         .font(.headline)
                         .fontWeight(.bold)
                 }
