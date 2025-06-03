@@ -44,6 +44,7 @@
 				"Targets/Features/DAV Unterhaltsrechner/BerechnungButton.swift",
 				"Targets/Features/DAV Unterhaltsrechner/CalculatorPage.swift",
 				"Targets/Features/DAV Unterhaltsrechner/ContactPage.swift",
+				"Targets/Features/DAV Unterhaltsrechner/ContentView.swift",
 				"Targets/Features/DAV Unterhaltsrechner/DAV_UnterhaltsrechnerApp.swift",
 				"Targets/Features/DAV Unterhaltsrechner/DavPage.swift",
 				"Targets/Features/DAV Unterhaltsrechner/DuesseldorferPage.swift",
@@ -52,12 +53,9 @@
 				"Targets/Features/DAV Unterhaltsrechner/ImpressumPage.swift",
 				"Targets/Features/DAV Unterhaltsrechner/InfoPage.swift",
 				"Targets/Features/DAV Unterhaltsrechner/PrivacyPage.swift",
-				"Targets/Features/DAV Unterhaltsrechner/RechnerPage.swift",
 				"Targets/Features/DAV Unterhaltsrechner/SettingsPage.swift",
 				"Targets/Features/DAV Unterhaltsrechner/SidebarMenu.swift",
-				"Targets/Features/DAV Unterhaltsrechner/UnterhaltsForm.swift",
 				"Targets/Features/DAV UnterhaltsrechnerTests/DAV_UnterhaltsrechnerTests.swift",
-				Targets/Features/RootFeature/Sources/ContentView.swift,
 			);
 			target = ADB45D572DCA3224007859FD /* DAV UnterhaltsrechnerUITests */;
 		};
@@ -65,9 +63,11 @@
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
 				Targets/Assets/Resources/Assets.xcassets,
+				Targets/Assets/Resources/unterhalt_values.json,
 				"Targets/Features/DAV Unterhaltsrechner/BerechnungButton.swift",
 				"Targets/Features/DAV Unterhaltsrechner/CalculatorPage.swift",
 				"Targets/Features/DAV Unterhaltsrechner/ContactPage.swift",
+				"Targets/Features/DAV Unterhaltsrechner/ContentView.swift",
 				"Targets/Features/DAV Unterhaltsrechner/DAV_UnterhaltsrechnerApp.swift",
 				"Targets/Features/DAV Unterhaltsrechner/DavPage.swift",
 				"Targets/Features/DAV Unterhaltsrechner/DuesseldorferPage.swift",
@@ -76,11 +76,9 @@
 				"Targets/Features/DAV Unterhaltsrechner/ImpressumPage.swift",
 				"Targets/Features/DAV Unterhaltsrechner/InfoPage.swift",
 				"Targets/Features/DAV Unterhaltsrechner/PrivacyPage.swift",
-				"Targets/Features/DAV Unterhaltsrechner/RechnerPage.swift",
+				"Targets/Features/DAV Unterhaltsrechner/ResultPage.swift",
 				"Targets/Features/DAV Unterhaltsrechner/SettingsPage.swift",
 				"Targets/Features/DAV Unterhaltsrechner/SidebarMenu.swift",
-				"Targets/Features/DAV Unterhaltsrechner/UnterhaltsForm.swift",
-				Targets/Features/RootFeature/Sources/ContentView.swift,
 			);
 			target = ADB45D402DCA3222007859FD /* DAV Unterhaltsrechner */;
 		};
@@ -230,7 +228,7 @@
 					};
 				};
 			};
-			buildConfigurationList = ADB45D3C2DCA3222007859FD /* Build configuration list for PBXProject "DAV Unterhaltsrechner" */;
+			buildConfigurationList = ADB45D3C2DCA3222007859FD /* Build configuration list for PBXProject "ios-econsult-dav-unterhalt" */;
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -565,7 +563,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		ADB45D3C2DCA3222007859FD /* Build configuration list for PBXProject "DAV Unterhaltsrechner" */ = {
+		ADB45D3C2DCA3222007859FD /* Build configuration list for PBXProject "ios-econsult-dav-unterhalt" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				ADB45D602DCA3224007859FD /* Debug */,

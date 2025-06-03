@@ -16,7 +16,7 @@ struct ResultPage: View {
     @State private var unterhaltValues: [[[Double]]] = []
     @State private var selbstbehalt: Double = 1450
 
-    @State private var kind1: Double = 0
+    @State private var kinds1: Double = 0
     @State private var kind2: Double = 0
     @State private var kind3: Double = 0
 
@@ -62,13 +62,13 @@ struct ResultPage: View {
            let json = try? JSONDecoder().decode([[[Double]]].self, from: data) {
             unterhaltValues = json
 
-            kind1 = calculateUnterhalt(age: age1, isThirdChild: false)
+            kinds1 = calculateUnterhalt(age: age1, isThirdChild: false)
             kind2 = calculateUnterhalt(age: age2, isThirdChild: false)
             kind3 = calculateUnterhalt(age: age3, isThirdChild: true)
         }
     }
 
-    var totalSupport: Double { kind1 + kind2 + kind3 }
+    var totalSupport: Double { kinds1 + kind2 + kind3 }
     var difference: Double { Double(income) - totalSupport }
     var anspruch: Double {
         let available = Double(income) - selbstbehalt
@@ -82,7 +82,7 @@ struct ResultPage: View {
                 
                 HStack {Text("Unterhalt Kind 1")
                     Spacer()
-                    Text("\(kind1, specifier: "%.2f") €")
+                    Text("\(kinds1, specifier: "%.2f") €")
                 }
                 
                 HStack {Text("Unterhalt Kind 2")
@@ -157,9 +157,10 @@ struct ResultPage: View {
         .navigationTitle("Deutscher Anwaltverein (DAV)")
         .navigationBarTitleDisplayMode(.inline)
         .onAppear {
+            print(age1, age2, age3, income)
             loadJson()
         }
-        
+   
         FooterView()
     }
 }
