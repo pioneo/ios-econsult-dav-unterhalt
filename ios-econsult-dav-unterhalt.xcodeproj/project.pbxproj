@@ -52,7 +52,6 @@
 				"Targets/Features/DAV Unterhaltsrechner/ImpressumPage.swift",
 				"Targets/Features/DAV Unterhaltsrechner/InfoPage.swift",
 				"Targets/Features/DAV Unterhaltsrechner/PrivacyPage.swift",
-				"Targets/Features/DAV Unterhaltsrechner/RechnerPage.swift",
 				"Targets/Features/DAV Unterhaltsrechner/SettingsPage.swift",
 				"Targets/Features/DAV Unterhaltsrechner/SidebarMenu.swift",
 				"Targets/Features/DAV Unterhaltsrechner/UnterhaltsForm.swift",
@@ -76,7 +75,7 @@
 				"Targets/Features/DAV Unterhaltsrechner/ImpressumPage.swift",
 				"Targets/Features/DAV Unterhaltsrechner/InfoPage.swift",
 				"Targets/Features/DAV Unterhaltsrechner/PrivacyPage.swift",
-				"Targets/Features/DAV Unterhaltsrechner/RechnerPage.swift",
+				"Targets/Features/DAV Unterhaltsrechner/ResultPage.swift",
 				"Targets/Features/DAV Unterhaltsrechner/SettingsPage.swift",
 				"Targets/Features/DAV Unterhaltsrechner/SidebarMenu.swift",
 				"Targets/Features/DAV Unterhaltsrechner/UnterhaltsForm.swift",
@@ -230,7 +229,7 @@
 					};
 				};
 			};
-			buildConfigurationList = ADB45D3C2DCA3222007859FD /* Build configuration list for PBXProject "DAV Unterhaltsrechner" */;
+			buildConfigurationList = ADB45D3C2DCA3222007859FD /* Build configuration list for PBXProject "ios-econsult-dav-unterhalt" */;
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -565,7 +564,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		ADB45D3C2DCA3222007859FD /* Build configuration list for PBXProject "DAV Unterhaltsrechner" */ = {
+		ADB45D3C2DCA3222007859FD /* Build configuration list for PBXProject "ios-econsult-dav-unterhalt" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				ADB45D602DCA3224007859FD /* Debug */,
