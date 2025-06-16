@@ -11,13 +11,60 @@ struct CalculatorPage: View {
     @State private var kind1: Double = 0
     @State private var kind2: Double = 0
     @State private var kind3: Double = 0
-    @State private var einkommen: Double = 0
+    @State private var einkommen: Double = 1000
 
     @State private var showResult = false
     @State private var showAlert = false
     
     // Fokuszustand hinzufügen
         @FocusState private var isInputFocused: Bool
+  
+    var sliders: some View {
+        VStack(alignment: .leading, spacing: 20) {
+            
+            HStack(spacing: 8) {
+                Text("Düsseldorfer Tabelle 2025")
+                    .font(.headline)
+                NavigationLink(destination: DuesseldorferPage()){
+                    Image(systemName: "info.circle")
+                        .imageScale(.medium)
+                }
+            }
+            HStack {
+                Text("Kind 1")
+                Slider(value: $kind1, in: 0...18, step: 1)
+                Text(kind1 == 0 ? "n.v." : "\(Int(kind1)) Jahre")
+            }
+
+            HStack {
+                Text("Kind 2")
+                Slider(value: $kind2, in: 0...18, step: 1)
+                Text(kind2 == 0 ? "n.v." : "\(Int(kind2)) Jahre")
+            }
+
+            HStack {
+                Text("Kind 3")
+                Slider(value: $kind3, in: 0...18, step: 1)
+                Text(kind3 == 0 ? "n.v." : "\(Int(kind3)) Jahre")
+            }
+
+            Divider()
+
+            HStack {
+                Text("Monatliches Einkommen:")
+                TextField("0", value: $einkommen, formatter: NumberFormatter())
+                    .keyboardType(.numberPad)
+                    .textFieldStyle(RoundedBorderTextFieldStyle())
+                Text("€")
+            }
+
+            Text("""
+                Grundlage der Unterhaltsberechnung ist ein bereinigtes Einkommen, das sogenannte unterhaltsrechtlich relevante Einkommen. Dieses kann sowohl höher als auch niedriger sein als das Nettoeinkommen.
+                """)
+                .font(.footnote)
+                .foregroundColor(.gray)
+        }
+    }
     
     var body: some View {
         VStack {
@@ -31,6 +78,7 @@ struct CalculatorPage: View {
             .focused($isInputFocused) // Fokus an Unterformular binden
             .frame(maxHeight: .infinity)
             BerechnungButton(action: {
+                print(kind1, kind2, kind3, einkommen)
                 if einkommen == 0 {
                     showAlert = true
                     return
