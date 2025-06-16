@@ -16,6 +16,9 @@ struct CalculatorPage: View {
     @State private var showResult = false
     @State private var showAlert = false
     
+    // Fokuszustand hinzufügen
+        @FocusState private var isInputFocused: Bool
+    
     var body: some View {
         VStack {
             HeaderView()
@@ -25,6 +28,7 @@ struct CalculatorPage: View {
                 kind3: $kind3,
                 einkommen: $einkommen
             )
+            .focused($isInputFocused) // Fokus an Unterformular binden
             .frame(maxHeight: .infinity)
             BerechnungButton(action: {
                 if einkommen == 0 {
@@ -38,6 +42,10 @@ struct CalculatorPage: View {
         .edgesIgnoringSafeArea(.all)
         .frame(alignment: .leading)
         .padding()
+        // Tastatur ausblenden bei Tippen außerhalb
+        .onTapGesture {
+            isInputFocused = false
+        }
         .sheet(isPresented: $showResult) {
             ResultPage(age1: Int(kind1), age2: Int(kind2), age3: Int(kind3), income: Int(einkommen))
         }
