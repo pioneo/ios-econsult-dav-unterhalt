@@ -10,12 +10,10 @@ import SwiftUI
 struct FooterView: View {
     var body: some View {
         VStack {
-            Image(systemName: "waveform.path.ecg") // Placeholder logo
-                .font(.largeTitle)
-                .foregroundColor(.red)
-            Text("DeutscherAnwaltVerein")
-                .font(.footnote)
-                .bold()
+            Image("logo") // Assets
+                .resizable()
+                .scaledToFit()
+                .frame(height: 40)
         }
         .padding(.top)
     }
