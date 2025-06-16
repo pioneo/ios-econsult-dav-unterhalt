@@ -11,7 +11,7 @@ struct CalculatorPage: View {
     @State private var kind1: Double = 0
     @State private var kind2: Double = 0
     @State private var kind3: Double = 0
-    @State private var einkommen: Double = 1000
+    @State private var einkommen: Double = 0
 
     @State private var showResult = false
     @State private var showAlert = false
@@ -69,12 +69,7 @@ struct CalculatorPage: View {
     var body: some View {
         VStack {
             HeaderView()
-            UnterhaltsForm(
-                kind1: $kind1,
-                kind2: $kind2,
-                kind3: $kind3,
-                einkommen: $einkommen
-            )
+            sliders
             .focused($isInputFocused) // Fokus an Unterformular binden
             .frame(maxHeight: .infinity)
             BerechnungButton(action: {
