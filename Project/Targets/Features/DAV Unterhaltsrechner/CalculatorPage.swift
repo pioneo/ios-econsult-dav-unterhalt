@@ -92,10 +92,10 @@ struct CalculatorPage: View {
         .sheet(isPresented: $showResult) {
             ResultPage(age1: Int(kind1), age2: Int(kind2), age3: Int(kind3), income: Int(einkommen))
         }
-        .alert("Missing Income", isPresented: $showAlert) {
+        .alert("Fehlendes Einkommen", isPresented: $showAlert) {
             Button("OK", role: .cancel) { }
         } message: {
-            Text("Please input an income larger than 0€ to continue.")
+            Text("Bitte geben Sie für das Einkommen einen Wert über 0 Euro an.")
         }
     }
 }
